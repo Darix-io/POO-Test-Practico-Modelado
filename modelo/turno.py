@@ -2,7 +2,6 @@ from modelo.persona import Persona
 
 
 class Turno:
-    """Representa un turno asignado a una persona."""
 
     def __init__(self, numero_turno: int, persona: Persona):
         self.__numero_turno = numero_turno

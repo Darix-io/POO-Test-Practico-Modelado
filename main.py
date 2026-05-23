@@ -5,10 +5,10 @@ from modelo.caja_atencion import CajaAtencion
 def main():
     caja = CajaAtencion()
 
-    p1 = Persona("Ana", "30123456")
-    p2 = Persona("Bruno", "30234567")
-    p3 = Persona("Carla", "30345678")
-    p4 = Persona("Diego", "30456789")
+    p1 = Persona("Brito", "9548848878")
+    p2 = Persona("Julia", "1125878788")
+    p3 = Persona("Mateo", "1366598548")
+    p4 = Persona("Ximena", "1029449484")
 
     caja.agregar_persona(p1)
     caja.agregar_persona(p2)
