@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Persona {
+  - nombre: str
+  - documento: str
+  + get nombre(): str
+  + get documento(): str
+}
+
+class Turno {
+  - numero_turno: int
+  - persona: Persona
+  + get numero_turno(): int
+  + get persona(): Persona
+}
+
+class CajaAtencion {
+  - turnos_pendientes: list<Turno>
+  - contador_turnos: int
+  + agregar_persona(persona: Persona): Turno
+  + atender_siguiente(): Turno
+  + esta_vacia(): bool
+  + proximo_turno(): Turno
+}
+
+CajaAtencion "1" o-- "*" Turno : contiene
+Turno "*" --> "1" Persona : corresponde a
+@enduml
+
